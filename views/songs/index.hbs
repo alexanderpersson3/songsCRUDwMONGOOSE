@@ -1,0 +1,20 @@
+<h2>Songs</h2>
+
+<p>
+    <a href="/songs/new">Create new</a>
+</p>
+
+<div class="item-grid">
+
+    {{#each songs}}
+    <article class="item">
+        <div>
+            <b>{{name}}</b> <br>
+            <i>{{description}}</i>
+        </div>
+
+        <a href="/songs/{{_id}}">Show</a>
+    </article>
+    {{/each}}
+
+</div>
